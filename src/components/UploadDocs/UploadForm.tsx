@@ -21,14 +21,14 @@ const UploadForm = () => {
           <h3 className="mt-2 text-xl font-medium text-green-500">
             Document uploaded
           </h3>
-          <div className="flex justify-between mt-8 mb-8 w-full">
+          <div className="flex flex-col md:flex-row justify-center items-center mt-8 space-y-4 md:space-y-0">
             {/* Left dropdown */}
-            <select className="bg-gray-200 text-lg  border-[#865DFF] border-2 p-2 mx-0 rounded-md mr-2">
+            <select className="bg-gray-200 text-lg  border-[#865DFF] border-2 p-2 rounded-md mr-0 md:mr-2">
               <option value="">English</option>
               {/* Add options for left dropdown here */}
             </select>
             {/* Right dropdown */}
-            <select className="bg-gray-200 p-2 text-lg border-[#865DFF] border-2 rounded-md ml-2">
+            <select className="bg-gray-200 p-2 text-lg border-[#865DFF] border-2 rounded-md ml-0 md:ml-2">
               <option value="">Hindi</option>
               {/* Add options for right dropdown here */}
             </select>

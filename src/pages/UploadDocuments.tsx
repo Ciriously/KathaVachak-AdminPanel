@@ -1,5 +1,5 @@
 import Breadcrumb from '../components/Breadcrumbs/Breadcrumb';
-import UploadBook from '../components/Tables/UploadBook';
+import UploadBook from '../components/UploadDocs/UploadBook';
 import DefaultLayout from '../layout/DefaultLayout';
 
 const Tables = () => {
