@@ -43,17 +43,16 @@ const DropdownUser = () => {
         className="flex items-center gap-4"
         to="#"
       >
-        <span className="hidden text-right lg:block">
-          <span className="block text-sm font-medium text-black dark:text-white">
-            Thomas Anree
-          </span>
-          <span className="block text-xs">UX Designer</span>
-        </span>
-
-        <span className="h-12 w-12 rounded-full">
+        {' '}
+        <span className="h-12 w-12 rounded-3xl">
           <img src={UserOne} alt="User" />
         </span>
-
+        <span className="hidden text-right lg:block">
+          <span className="block text-sm font-medium text-black dark:text-white">
+            Aditya Mishra
+          </span>
+          <span className="block text-xs">Premium</span>
+        </span>
         <svg
           className="hidden fill-current sm:block"
           width="12"
