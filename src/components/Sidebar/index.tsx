@@ -58,12 +58,12 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   return (
     <aside
       ref={sidebar}
-      className={`absolute left-0 top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-white duration-300 ease-linear  lg:static lg:translate-x-0 ${
+      className={`absolute left-0 font-poppins top-0 z-9999 flex h-screen w-72.5 flex-col overflow-y-hidden bg-white duration-300 ease-linear  lg:static lg:translate-x-0 ${
         sidebarOpen ? 'translate-x-0' : '-translate-x-full'
       }`}
     >
       {/* <!-- SIDEBAR HEADER --> */}
-      <div className="flex items-center justify-between gap-0 ml-2 px-2 py-5.5 lg:py-6.5">
+      <div className="flex items-center justify-between font-poppins gap-0 ml-2 px-2 py-5.5 lg:py-6.5">
         <NavLink to="/">
           <img src={Logo} alt="Logo" />
         </NavLink>
@@ -100,7 +100,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
         <nav className="mt-5 py-4 px-4 lg:mt-9 lg:px-6">
           {/* <!-- Menu Group --> */}
           <div>
-            <h3 className="mb-4 ml-4 text-sm font-semibold text-bodydark2">
+            <h3 className="mb-4 ml-4 text-sm font-semibold text-[#7C8DB5]">
               MENU
             </h3>
 
@@ -116,8 +116,10 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                     <React.Fragment>
                       <NavLink
                         to="#"
-                        className={`group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-[#2E3271] duration-300 ease-in-out  ${
-                          pathname === '/' || pathname.includes('dashboard')
+                        className={`group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-[#2E3271] duration-300 ease-in-out hover:text-[#865DFF] ${
+                          (pathname === '/' ||
+                            pathname.includes('dashboard')) &&
+                          'text-[#865DFF]'
                         }`}
                         onClick={(e) => {
                           e.preventDefault();
@@ -153,6 +155,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                         </svg>
                         Home
                       </NavLink>
+
                       {/* <!-- Dropdown Menu Start --> */}
 
                       {/* <!-- Dropdown Menu End --> */}
@@ -166,9 +169,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li>
                 <NavLink
                   to="/calendar"
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-[#2E3271]duration-300 ease-in-out  ${pathname.includes(
-                    'calendar',
-                  )}`}
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-[#2E3271] duration-300 ease-in-out hover:text-[#865DFF] ${
+                    pathname.includes('calendar') && 'hover:text-[#865DFF]'
+                  }`}
                 >
                   <svg
                     className="fill-current"
@@ -190,9 +193,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li>
                 <NavLink
                   to="/tables"
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-[#2E3271] duration-300 ease-in-out  ${pathname.includes(
-                    'profile',
-                  )}`}
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-[#2E3271] duration-300 ease-in-out hover:text-[#865DFF] ${
+                    pathname.includes('profile') && 'text-[#865DFF]'
+                  }`}
                 >
                   <svg
                     className="fill-current"
@@ -218,9 +221,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               <li>
                 <NavLink
                   to="/tables"
-                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-[#2E3271] duration-300 ease-in-out  ${pathname.includes(
-                    'tables',
-                  )}`}
+                  className={`group relative flex items-center gap-2.5 rounded-sm py-2 px-4 font-medium text-[#2E3271] duration-300 ease-in-out hover:text-[#865DFF] ${
+                    pathname.includes('tables') && 'text-[#865DFF]'
+                  }`}
                 >
                   <svg
                     className="fill-current"

@@ -5,7 +5,7 @@ import Loader from './common/Loader';
 import PageTitle from './components/PageTitle';
 import SignIn from './pages/Authentication/SignIn';
 import SignUp from './pages/Authentication/SignUp';
-import Calendar from './pages/Calendar';
+import Player from './pages/Player';
 import Chart from './pages/Chart';
 import ECommerce from './pages/Dashboard/ECommerce';
 import FormElements from './pages/Form/FormElements';
@@ -56,7 +56,7 @@ function App() {
           element={
             <>
               <PageTitle title="Calendar " />
-              <Calendar />
+              <Player />
             </>
           }
         />
