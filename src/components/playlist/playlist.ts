@@ -6,7 +6,7 @@ import coverArtOne from './cover-art/1.jpg';
 import coverArtTwo from './cover-art/2.jpg';
 import coverArtThree from './cover-art/3.jpg';
 import coverArtFour from './cover-art/4.jpg';
-import { Playlist } from '../player/types';
+import { Playlist } from '../MiniPlayer/types';
 
 const playlist: Playlist = [
   {

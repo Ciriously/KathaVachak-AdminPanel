@@ -1,11 +1,11 @@
-import playButtonIcon from '../../images/icons/ic_play.svg';
-import pauseButtonIcon from '../../images/icons/ic_pause.svg';
-import nextButtonIcon from '../../images/icons/ic_next.svg';
-import prevButtonIcon from '../../images/icons/ic_prev.svg';
+import playButtonIcon from '../../images/Player/Play.svg';
+import pauseButtonIcon from '../../images/Player/Play.svg';
+import nextButtonIcon from '../../images/Player/Next.svg';
+import prevButtonIcon from '../../images/Player/Previous.svg';
 import shuffleButtonIcon from '../../images/icons/ic_shuffle.svg';
-import shuffleButtonDisabledIcon from '../../images/icons/ic_shuffle_disabled.svg';
-import repeatButtonIcon from '../../images/icons/ic_repeat.svg';
-import repeatButtonDisabledIcon from '../../images/icons/ic_repeat_disabled.svg';
+import shuffleButtonDisabledIcon from '../../images/Player/Back.svg';
+import repeatButtonIcon from '../../images/Player/Fast Forward.svg';
+import repeatButtonDisabledIcon from '../../images/Player/Fast Forward.svg';
 
 type ControlsProps = {
   onPlayClick: () => void;
@@ -31,19 +31,39 @@ const Controls = ({
   return (
     <div className="flex flex-row mt-4">
       <ImageButton
+        className=" ml-0 mt-2"
         src={shuffle ? shuffleButtonIcon : shuffleButtonDisabledIcon}
         onClick={onShuffleClick}
+        width={30}
+        height={65}
       />
-      <ImageButton src={prevButtonIcon} onClick={onPrevClick} />
       <ImageButton
-        className="mr-2 ml-2"
+        className="mr-2 ml-4 mt-2"
+        src={prevButtonIcon}
+        onClick={onPrevClick}
+        width={30}
+        height={65}
+      />
+      <ImageButton
+        className="mr-1 ml-1 mt-[-1rem]"
         src={isPlaying ? pauseButtonIcon : playButtonIcon}
         onClick={onPlayClick}
+        width={150}
+        height={110}
       />
-      <ImageButton src={nextButtonIcon} onClick={onNextClick} />
       <ImageButton
+        className="mr-10 mt-2"
+        src={nextButtonIcon}
+        onClick={onNextClick}
+        width={30}
+        height={65}
+      />
+      <ImageButton
+        className="mr-2 ml-2 mt-2"
         src={repeat ? repeatButtonIcon : repeatButtonDisabledIcon}
         onClick={onRepeatClick}
+        width={30}
+        height={65}
       />
     </div>
   );
@@ -55,17 +75,24 @@ type ImageButtonProps = {
   src: string;
   onClick: () => void;
   className?: string;
+  width: number;
+  height: number;
 };
 
-const ImageButton = ({ onClick, src, className }: ImageButtonProps) => {
-  const buttonSize = 65;
+const ImageButton = ({
+  onClick,
+  src,
+  className,
+  width,
+  height,
+}: ImageButtonProps) => {
   return (
-    <button onClick={onClick}>
+    <button onClick={onClick} style={{ width: width, height: height }}>
       <img
         src={src}
-        width={buttonSize}
-        height={buttonSize}
-        className={`drop-shadow-lg  ${className ?? ''}`}
+        width={width}
+        height={height}
+        className={`drop-shadow-lg ${className ?? ''}`}
       />
     </button>
   );

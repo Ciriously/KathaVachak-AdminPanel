@@ -9,7 +9,7 @@ const SongInfo = ({ title, artist, coverArtSrc }: SongInfoProps) => {
     <div className="flex flex-col justify-center items-center mb-10">
       <img
         className="drop-shadow-lg rounded-xl mb-10"
-        width={240}
+        width={280}
         height={180}
         src={coverArtSrc}
       />

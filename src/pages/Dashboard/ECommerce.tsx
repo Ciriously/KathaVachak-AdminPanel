@@ -4,7 +4,7 @@ import CountinueReading from '../../components/dashboard/CountinueReading';
 import Player from '../../components/dashboard/screenplayer';
 import DefaultLayout from '../../layout/DefaultLayout';
 import AudioPlayer from '../../components/AudioPlayer/audioplayer';
-import UploadDocs from '../../components/dashboard/UploadDocs';
+import UploadLinks from '../../components/dashboard/uploadlinks';
 
 const ECommerce: React.FC = () => {
   return (
@@ -13,7 +13,7 @@ const ECommerce: React.FC = () => {
         <div className="hidden md:block col-span-1"></div>{' '}
         {/* Placeholder for space */}
         <div className="md:col-span-1 xl:col-span-2 2xl:col-span-3">
-          <UploadDocs />
+          <UploadLinks />
 
           <CountinueReading />
           <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
