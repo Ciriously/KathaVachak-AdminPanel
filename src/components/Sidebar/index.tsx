@@ -509,7 +509,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
                   />
                 </a>
               </div>
-              <div className="mt-0 ml-4">
+              <div className="mt-0 ml-3">
                 <p className="text-xs text-[#7C8DB5]">
                   Legal ⁃ Privacy ⁃ Cookie Policy ⁃ Cookie
                 </p>
