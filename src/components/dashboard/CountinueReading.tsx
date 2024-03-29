@@ -21,6 +21,30 @@ const CountinueReading = () => {
         'https://images.unsplash.com/photo-1526243741027-444d633d7365?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       progress: 30,
     },
+    {
+      id: 3,
+      imageUrl:
+        'https://images.unsplash.com/photo-1526243741027-444d633d7365?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      progress: 30,
+    },
+    {
+      id: 3,
+      imageUrl:
+        'https://images.unsplash.com/photo-1526243741027-444d633d7365?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      progress: 30,
+    },
+    {
+      id: 3,
+      imageUrl:
+        'https://images.unsplash.com/photo-1526243741027-444d633d7365?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      progress: 30,
+    },
+    {
+      id: 3,
+      imageUrl:
+        'https://images.unsplash.com/photo-1526243741027-444d633d7365?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      progress: 30,
+    },
   ];
   return (
     <div>
@@ -33,9 +57,9 @@ const CountinueReading = () => {
           <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
             <div className="flex flex-nowrap lg:ml-4 md:ml-20 ml-10 ">
               {cardData.map((card) => (
-                <div key={card.id} className="inline-block px-3">
+                <div key={card.id} className="inline-block px-2">
                   <div
-                    className="w-80 h-64 max-w-md overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out relative"
+                    className="w-60 h-48 max-w-md overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out relative"
                     style={{
                       backgroundImage: `url(${card.imageUrl})`,
                       backgroundSize: 'cover',

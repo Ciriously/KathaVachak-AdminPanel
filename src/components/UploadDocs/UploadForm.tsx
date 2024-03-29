@@ -34,8 +34,8 @@ const UploadForm = () => {
             </select>
           </div>
           {/* Generate audio book button */}
-          <button className="mt-4 bg-[#865DFF] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center">
-            <img className="h-8 w-10 mr-2" src={btn} alt="Logo" />
+          <button className="mt-8 bg-[#865DFF] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center">
+            <img className="h-8 w-18 mx-4" src={btn} alt="Logo" />
             Generate Audio Book
           </button>
         </div>

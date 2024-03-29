@@ -37,17 +37,17 @@ const Reader = () => {
   return (
     <div className="flex justify-center items-center w-full">
       {sectionsData.map((section, index) => (
-        <section key={index} className="bg-white w-3/4 rounded-3xl">
-          <div className="container mx-auto py-12 md:py-0">
-            <div className="max-w-5xl font-poppins mx-auto rounded-lg p-8">
-              <h1 className="text-3xl font-medium text-center text-[#2E3271] mb-8">
+        <section key={index} className="bg-white w-full md:w-3/4 rounded-2xl">
+          <div className="container mx-auto py-4 md:py-0">
+            <div className="max-w-4xl font-poppins mx-auto rounded-lg p-4 md:p-6">
+              <h1 className="text-xl md:text-xl font-medium text-center text-[#2E3271] mb-2 md:mb-4">
                 {section.title}
               </h1>
-              <p className="text-xl font-normal text-black leading-relaxed">
+              <p className="text-sm md:text-base font-normal text-black leading-relaxed">
                 {highlightKeywords(section.description)}
               </p>
             </div>
-            <div className="bg-[#F3EFFF] rounded-3xl flex justify-center mt-8">
+            <div className="bg-[#F3EFFF] rounded-2xl flex justify-center mt-2 md:mt-4">
               <ScreenPlayer />
             </div>
           </div>

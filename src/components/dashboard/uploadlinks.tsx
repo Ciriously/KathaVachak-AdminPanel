@@ -18,13 +18,13 @@ const UploadLinks: React.FC = () => {
   ];
 
   return (
-    <div className="h-[40rem]  rounded-3xl bg-white py-18">
+    <div className="h-[32rem] rounded-3xl bg-white py-12">
       <div className="container mx-auto">
-        <h1 className="text-3xl text-[#2E3271] font-poppins px-12 font-bold text-left mb-14">
+        <h1 className="text-3xl text-[#2E3271] font-poppins px-8 font-bold text-left mb-10">
           Upload documents
         </h1>
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-3 py-25 gap-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 py-20 gap-10">
             {cardsData.map((card, index) => (
               <div
                 key={index}
