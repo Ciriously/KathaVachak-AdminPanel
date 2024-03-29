@@ -43,7 +43,7 @@ const AudioPlayer = () => {
   }
 
   return (
-    <div className="bg-white rounded-2xl py-2 w-full mt-[-2.5rem] shadow-md">
+    <div className="bg-white rounded-2xl py-2 w-full mt-[-3.9rem] shadow-md">
       <div className="flex flex-col items-center">
         <SongInfo
           title={currentTrackMetadata?.title}

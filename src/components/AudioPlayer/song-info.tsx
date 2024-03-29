@@ -9,7 +9,7 @@ const SongInfo = ({ title, artist, coverArtSrc }: SongInfoProps) => {
     <div className="flex flex-col w-full justify-center items-center mb-7">
       <img
         className="drop-shadow-lg object-contain px-4 rounded-3xl"
-        style={{ height: '280px', borderRadius: '2rem' }}
+        style={{ height: '225px', borderRadius: '1.5rem' }}
         src={coverArtSrc}
       />
       <span className="text-2xl text-left font-poppins text-[#000]">

@@ -3,6 +3,10 @@ import Translate from '../../images/Player/footer/Translate.svg';
 import Chapter from '../../images/Player/footer/Paper.svg';
 import Speed from '../../images/Player/footer/time.svg';
 import Download from '../../images/Player/footer/Download.svg';
+import secbehind from '../../images/sidebar/player/10 sec back.svg';
+import secahead from '../../images/sidebar/player/10 sec aead.svg';
+import prev from '../../images/sidebar/player/back.svg';
+import next from '../../images/sidebar/player/forward.svg';
 
 const Player = () => {
   return (
@@ -42,41 +46,10 @@ const Player = () => {
               className="hidden sm:block lg:hidden xl:block"
               aria-label="Previous"
             >
-              <svg width={20} height={20} fill="none">
-                <path
-                  d="m10 12 8-6v12l-8-6Z"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M6 6v12"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <img src={prev} />
             </button>
             <button type="button" aria-label="Rewind 10 seconds">
-              <svg width={20} height={20} fill="none">
-                <path
-                  d="M6.492 16.95c2.861 2.733 7.5 2.733 10.362 0 2.861-2.734 2.861-7.166 0-9.9-2.862-2.733-7.501-2.733-10.362 0A7.096 7.096 0 0 0 5.5 8.226"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M5 5v3.111c0 .491.398.889.889.889H9"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <img src={secbehind} />
             </button>
           </div>
           <button type="button" aria-label="Pause/Play">
@@ -84,45 +57,14 @@ const Player = () => {
           </button>
           <div className="flex-auto mb-4  flex items-center justify-evenly">
             <button type="button" aria-label="Skip 10 seconds" className="">
-              <svg width={20} height={20} fill="none">
-                <path
-                  d="M17.509 16.95c-2.862 2.733-7.501 2.733-10.363 0-2.861-2.734-2.861-7.166 0-9.9 2.862-2.733 7.501-2.733 10.363 0 .38.365.711.759.991 1.176"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M19 5v3.111c0 .491-.398.889-.889.889H15"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <img src={secahead} />
             </button>
             <button
               type="button"
               className="hidden sm:block lg:hidden xl:block"
               aria-label="Next"
             >
-              <svg width={20} height={20} fill="none">
-                <path
-                  d="M14 12 6 6v12l8-6Z"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M18 6v12"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <img src={next} />
             </button>
           </div>
         </div>

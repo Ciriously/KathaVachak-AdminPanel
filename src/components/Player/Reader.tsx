@@ -6,7 +6,7 @@ const sectionsData = [
     description:
       'TRULY, "thoughts are things," and powerful things at that, when they are mixed with definiteness of purpose, persistence, and a BURNING DESIRE for their translation into riches, or other material objects. A little more than thirty years ago, Edwin C. Barnes discovered how true it is that men really do THINK AND GROW RICH. His discovery did not come about at one sitting. are things," and powerful things at that, when they are mixed with definiteness of purpose, persistence, and a BURNING DESIRE for their translation into riches, or other material objects. A little more than thirty years ago, Edwin C. Barnes discovered how true it is that men really do THINK AND GROW RICH. His discovery did not come about at one sitting.TRULY, "thoughts are thin and powerful things at that, when they are mixed with definiteness of purpose, persistence, and a BURNING DESIRE for their translation into riches, or other material objects. A little more than thirty years ago, Edwin C. Barnes discovered how true it is that men really do THINK AND GROW RICH. His discovery did not come about at one sitting.',
     button1: 'Button 1',
-    switchContent: false, // Image on the left, content on the right
+    switchContent: false,
   },
 ];
 
