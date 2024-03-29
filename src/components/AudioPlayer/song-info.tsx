@@ -6,15 +6,16 @@ type SongInfoProps = {
 
 const SongInfo = ({ title, artist, coverArtSrc }: SongInfoProps) => {
   return (
-    <div className="flex flex-col justify-center items-center mb-10">
+    <div className="flex flex-col w-full justify-center items-center mb-7">
       <img
-        className="drop-shadow-lg rounded-xl mb-10"
-        width={280}
-        height={180}
+        className="drop-shadow-lg object-contain px-4 rounded-3xl"
+        style={{ height: '280px', borderRadius: '2rem' }}
         src={coverArtSrc}
       />
-      <span className="text-2xl  drop-shadow-lg text-[#000]">{title}</span>
-      <span className="text-base drop-shadow-lg text-[gray]">{artist}</span>
+      <span className="text-2xl text-left font-poppins text-[#000]">
+        {title}
+      </span>
+      <span className="text-base font-poppins text-[gray]">{artist}</span>
     </div>
   );
 };

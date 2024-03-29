@@ -1,4 +1,3 @@
-import React from 'react';
 import Controls from './controls';
 import ProgressBar from './progressbar';
 import SongInfo from './song-info';
@@ -44,7 +43,7 @@ const AudioPlayer = () => {
   }
 
   return (
-    <div className="bg-white rounded-2xl p-8 mx-1 shadow-lg">
+    <div className="bg-white rounded-2xl py-2 w-full mt-[-2.5rem] shadow-md">
       <div className="flex flex-col items-center">
         <SongInfo
           title={currentTrackMetadata?.title}

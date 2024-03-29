@@ -29,41 +29,41 @@ const Controls = ({
   onShuffleClick,
 }: ControlsProps) => {
   return (
-    <div className="flex flex-row mt-4">
+    <div className="flex flex-row mt-0">
       <ImageButton
         className=" ml-0 mt-2"
         src={shuffle ? shuffleButtonIcon : shuffleButtonDisabledIcon}
         onClick={onShuffleClick}
-        width={30}
-        height={65}
+        width={20}
+        height={40}
       />
       <ImageButton
         className="mr-2 ml-4 mt-2"
         src={prevButtonIcon}
         onClick={onPrevClick}
-        width={30}
-        height={65}
+        width={20}
+        height={40}
       />
       <ImageButton
         className="mr-1 ml-1 mt-[-1rem]"
         src={isPlaying ? pauseButtonIcon : playButtonIcon}
         onClick={onPlayClick}
-        width={150}
-        height={110}
+        width={100}
+        height={90}
       />
       <ImageButton
         className="mr-10 mt-2"
         src={nextButtonIcon}
         onClick={onNextClick}
-        width={30}
-        height={65}
+        width={20}
+        height={40}
       />
       <ImageButton
         className="mr-2 ml-2 mt-2"
         src={repeat ? repeatButtonIcon : repeatButtonDisabledIcon}
         onClick={onRepeatClick}
-        width={30}
-        height={65}
+        width={20}
+        height={40}
       />
     </div>
   );

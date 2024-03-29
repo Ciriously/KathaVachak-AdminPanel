@@ -24,7 +24,7 @@ const ProgressBar = ({
           onChange(parseInt(event?.target.value));
         }}
       />
-      <div className="flex w-full flex-row justify-between mt-1 text-[#865DFF]">
+      <div className="flex w-full flex-row justify-between text-[#865DFF]">
         <span className="text-xs text-[#865DFF] font-bold">{leftLabel}</span>
         <span className="text-xs text-[#865DFF] font-bold">{rightLabel}</span>
       </div>

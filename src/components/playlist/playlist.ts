@@ -2,7 +2,7 @@ import trackOne from './songs/track1.mp3';
 import trackTwo from './songs/track2.mp3';
 import trackThree from './songs/track3.mp3';
 import trackFour from "./songs/track4.mp3"
-import coverArtOne from './cover-art/1.jpg';
+import coverArtOne from './cover-art/1.png';
 import coverArtTwo from './cover-art/2.jpg';
 import coverArtThree from './cover-art/3.jpg';
 import coverArtFour from './cover-art/4.jpg';

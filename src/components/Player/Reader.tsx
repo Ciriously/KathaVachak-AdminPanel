@@ -1,4 +1,3 @@
-import React from 'react';
 import ScreenPlayer from './screenplayer';
 
 const sectionsData = [
@@ -37,17 +36,20 @@ const Reader = () => {
   return (
     <div className="flex justify-center items-center w-full">
       {sectionsData.map((section, index) => (
-        <section key={index} className="bg-white w-full md:w-3/4 rounded-2xl">
+        <section
+          key={index}
+          className="bg-white w-4/5 md:w-4/5 rounded-[57.5px]"
+        >
           <div className="container mx-auto py-4 md:py-0">
             <div className="max-w-4xl font-poppins mx-auto rounded-lg p-4 md:p-4">
-              <h1 className="text-2xl md:text-2xl font-medium text-center text-[#2E3271] mb-2 md:mb-4">
+              <h1 className="text-2xl md:text-2xl font-medium text-center text-[#2E3271] mb-2 py-2 md:mb-4">
                 {section.title}
               </h1>
               <p className="text-sm md:text-xl font-normal text-justify pt-3 text-black leading-relaxed">
                 {highlightKeywords(section.description)}
               </p>
             </div>
-            <div className="bg-[#F3EFFF] rounded-2xl flex justify-center mt-2 md:mt-4">
+            <div className="bg-[#F3EFFF]  rounded-[57.5px] flex justify-center mt-2 md:mt-4">
               <ScreenPlayer />
             </div>
           </div>

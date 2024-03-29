@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Playbtn from '../../images/Player/Play.svg';
 import Translate from '../../images/Player/footer/Translate.svg';
 import Chapter from '../../images/Player/footer/Paper.svg';
@@ -9,7 +7,7 @@ import Download from '../../images/Player/footer/Download.svg';
 const Player = () => {
   return (
     <>
-      <div className="mt-2 w-2/3 bg-[#F3EFFF] sm:mt-8 relative z-10 rounded-xl ">
+      <div className="mt-2 w-2/3  bg-[#F3EFFF] sm:mt-8 relative z-10 rounded-[57.5px] ">
         <div className="transition-all duration-500 rounded-t-xl ">
           <div className="space-y-1">
             <div className="relative">
@@ -128,7 +126,7 @@ const Player = () => {
             </button>
           </div>
         </div>
-        <div className="flex px-16 mb-1 justify-between flex-wrap">
+        <div className="flex px-16 py-4 mb-1 justify-between flex-wrap">
           <div className="flex items-center flex-col">
             <img src={Translate} alt="Podcast" className="mx-auto" />
             <p className="text-[#2E2E5D] text-center mt-1">Translate</p>
