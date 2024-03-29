@@ -39,11 +39,11 @@ const Reader = () => {
       {sectionsData.map((section, index) => (
         <section key={index} className="bg-white w-full md:w-3/4 rounded-2xl">
           <div className="container mx-auto py-4 md:py-0">
-            <div className="max-w-4xl font-poppins mx-auto rounded-lg p-4 md:p-6">
-              <h1 className="text-xl md:text-xl font-medium text-center text-[#2E3271] mb-2 md:mb-4">
+            <div className="max-w-4xl font-poppins mx-auto rounded-lg p-4 md:p-4">
+              <h1 className="text-2xl md:text-2xl font-medium text-center text-[#2E3271] mb-2 md:mb-4">
                 {section.title}
               </h1>
-              <p className="text-sm md:text-base font-normal text-black leading-relaxed">
+              <p className="text-sm md:text-xl font-normal text-justify pt-3 text-black leading-relaxed">
                 {highlightKeywords(section.description)}
               </p>
             </div>

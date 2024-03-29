@@ -9,8 +9,8 @@ import Download from '../../images/Player/footer/Download.svg';
 const Player = () => {
   return (
     <>
-      <div className="mt-2 w-2/3 bg-[#F3EFFF] sm:mt-1 relative z-10 rounded-xl ">
-        <div className="transition-all duration-500 rounded-t-xl p-2 pb-8 sm:p-6 sm:pb-6 lg:p- lg:pb-6 xl:p-6 xl:pb-6 space-y-4 sm:space-y-6 lg:space-y-4 xl:space-y-6">
+      <div className="mt-2 w-2/3 bg-[#F3EFFF] sm:mt-8 relative z-10 rounded-xl ">
+        <div className="transition-all duration-500 rounded-t-xl ">
           <div className="space-y-1">
             <div className="relative">
               <div className="bg-white transition-all duration-500 rounded-full overflow-hidden">
